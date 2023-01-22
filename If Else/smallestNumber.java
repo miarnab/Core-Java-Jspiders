@@ -1,0 +1,20 @@
+import java.io.*;
+public class smallestNumber {
+    public static void main(String args[])throws IOException{
+        InputStreamReader isr=new InputStreamReader(System.in);
+        BufferedReader br=new BufferedReader(isr);
+        System.out.println("Enter the three numbers");
+        int a = Integer.parseInt(br.readLine());
+        int b = Integer.parseInt(br.readLine());
+        int c = Integer.parseInt(br.readLine());
+        if(a<b && a<c){
+            System.out.println("Smallest Number is:"+a);
+        }
+        else if(b<c){
+            System.out.println("Smallest Number is:"+b);
+        }
+        else{
+            System.out.println("Smallest Number is:"+c);
+        }
+    }
+}
